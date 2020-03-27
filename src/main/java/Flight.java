@@ -22,6 +22,10 @@ public class Flight {
         return this.passengers;
     }
 
+    public int getNumberOfPassengers(){
+        return this.passengers.size();
+    }
+
     public Plane getPlane(){
         return this.plane;
     }
@@ -42,8 +46,13 @@ public class Flight {
         return this.departureTime;
     }
 
+    public int getAvailableSeats(){
+        int availableSeats = this.plane.getCapacityFromEnum() - this.passengers.size();
+        return availableSeats;
+    }
+
     public void addPassenger(Passenger passenger){
-        if (this.passengers.size() < this.plane.getCapacityFromEnum()) {
+        if (getAvailableSeats() > 0) {
             this.passengers.add(passenger);
         }
     }
