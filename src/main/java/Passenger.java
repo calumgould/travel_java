@@ -34,7 +34,14 @@ public class Passenger {
         }
         int capacity = this.flight.getPlane().getCapacityFromEnum();
         int range = (capacity - 1) + 1;
-        this.seatNumber = (int) (Math.random() * range + 1);
+        int seatNumber = (int) (Math.random() * range + 1);
+
+        if (flight.getReservedSeats().containsValue(seatNumber)){
+            assignSeatNumber();
+            return;
+        }
+
+        this.seatNumber = seatNumber;
     }
     
     public Flight assignFlight(Flight flightToAdd) {

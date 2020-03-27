@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.stream.Collectors;
 //import java.util.Date;
 
 public class Flight {
@@ -52,9 +54,19 @@ public class Flight {
         return availableSeats;
     }
 
+    public HashMap getReservedSeats(){
+        HashMap<String, Integer> seats = new HashMap<String, Integer>();
+        for (Passenger passenger : this.passengers ){
+            seats.put(passenger.getName(), passenger.getSeatNumber());
+        }
+        return seats;
+    }
+
     public void addPassenger(Passenger passenger){
         if (getAvailableSeats() > 0) {
             this.passengers.add(passenger);
+            passenger.assignFlight(this);
+            passenger.assignSeatNumber();
         }
     }
 }
