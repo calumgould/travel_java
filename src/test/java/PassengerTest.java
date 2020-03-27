@@ -54,6 +54,6 @@ public class PassengerTest {
         smallFlight.addPassenger(passenger);
         smallFlight.addPassenger(passenger2);
         smallFlight.addPassenger(passenger3);
-        System.out.println(smallFlight.getReservedSeats());
+        assertEquals()
     }
 }

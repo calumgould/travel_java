@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Passenger {
 
     private String name;
@@ -27,6 +31,16 @@ public class Passenger {
     public int getSeatNumber(){
         return this.seatNumber;
     }
+
+    public ArrayList getAllReservedSeatNumbers(){
+        ArrayList<Integer> reservedSeats = new ArrayList<>();
+        for (Integer seat : flight.getReservedSeats()) {
+
+            reservedSeats.add(seat);
+        }
+        return Collections.sort(reservedSeats);
+    }
+
 
     public void assignSeatNumber(){
         if (this.flight == null) {
