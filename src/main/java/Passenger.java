@@ -32,16 +32,6 @@ public class Passenger {
         return this.seatNumber;
     }
 
-    public ArrayList getAllReservedSeatNumbers(){
-        ArrayList<Integer> reservedSeats = new ArrayList<>();
-        for (Integer seat : flight.getReservedSeats()) {
-
-            reservedSeats.add(seat);
-        }
-        return Collections.sort(reservedSeats);
-    }
-
-
     public void assignSeatNumber(){
         if (this.flight == null) {
             return;

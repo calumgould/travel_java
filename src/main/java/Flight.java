@@ -1,4 +1,8 @@
+import java.util.*;
+
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.stream.Collectors;
 //import java.util.Date;
@@ -60,6 +64,13 @@ public class Flight {
             seats.put(passenger.getName(), passenger.getSeatNumber());
         }
         return seats;
+    }
+
+    public ArrayList getAllReservedSeatNumbers(){
+        Collection<Integer> reservedSeats = getReservedSeats().values();
+        ArrayList<Integer> reservedSeatsArray = new ArrayList<Integer>(reservedSeats);
+        Collections.sort(reservedSeatsArray);
+        return reservedSeatsArray;
     }
 
     public void addPassenger(Passenger passenger){

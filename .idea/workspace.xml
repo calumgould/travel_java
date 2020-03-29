@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c64cadaa-a96b-4142-94ab-79992133f522" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FlightTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PassengerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PassengerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Passenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FlightTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FlightTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PassengerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PassengerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,9 +95,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in airlineHW" />
+        <item itemvalue="JUnit.FlightManagerTest" />
         <item itemvalue="JUnit.PassengerTest" />
         <item itemvalue="JUnit.FlightTest" />
-        <item itemvalue="JUnit.FlightManagerTest" />
         <item itemvalue="JUnit.PlaneTest" />
       </list>
     </recent_temporary>
@@ -126,25 +132,25 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="458" y="179" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1440.804@0.23.1440.804" timestamp="1585319187995" />
-    <state width="1398" height="204" key="GridCell.Tab.0.bottom" timestamp="1585328992832">
+    <state width="1398" height="204" key="GridCell.Tab.0.bottom" timestamp="1585494264919">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1585328992832" />
-    <state width="1398" height="204" key="GridCell.Tab.0.center" timestamp="1585328992830">
+    <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1585494264919" />
+    <state width="1398" height="204" key="GridCell.Tab.0.center" timestamp="1585494264917">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1585328992830" />
-    <state width="1398" height="204" key="GridCell.Tab.0.left" timestamp="1585328992830">
+    <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1585494264917" />
+    <state width="1398" height="204" key="GridCell.Tab.0.left" timestamp="1585494264916">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1585328992830" />
-    <state width="1398" height="204" key="GridCell.Tab.0.right" timestamp="1585328992831">
+    <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1585494264916" />
+    <state width="1398" height="204" key="GridCell.Tab.0.right" timestamp="1585494264918">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1585328992831" />
-    <state x="399" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1585307695548">
+    <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1585494264918" />
+    <state x="399" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1585490932755">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
-    <state x="399" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.804@0.23.1440.804" timestamp="1585307695548" />
+    <state x="399" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.804@0.23.1440.804" timestamp="1585490932755" />
   </component>
 </project>

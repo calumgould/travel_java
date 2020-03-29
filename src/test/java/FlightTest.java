@@ -1,13 +1,18 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class FlightTest {
 
     Flight flight;
+    Flight smallFlight;
     Plane plane;
+    Plane plane2;
     Passenger passenger;
     Passenger passenger2;
     Passenger passenger3;
@@ -15,7 +20,9 @@ public class FlightTest {
     @Before
     public void before(){
         plane = new Plane(PlaneType.AIRBUSA300);
+        plane2 = new Plane(PlaneType.DOUGLASDC8);
         flight = new Flight(plane, "ED2427", "GLA", "EDI", "21:10");
+        smallFlight = new Flight(plane2, "RO054", "EDI", "ABD", "13:35");
         passenger = new Passenger("Calum", 2);
         passenger2 = new Passenger("Roosa", 1);
         passenger3 = new Passenger("Noel", 3);
@@ -68,6 +75,15 @@ public class FlightTest {
         flight.addPassenger(passenger3);
         System.out.println(flight.getReservedSeats());
         assertEquals(3, flight.getReservedSeats().size());
+    }
+
+    @Test
+    public void canGetAllReservedSeatNumbers(){
+        smallFlight.addPassenger(passenger);
+        smallFlight.addPassenger(passenger2);
+        smallFlight.addPassenger(passenger3);
+        ArrayList<Integer> result = new ArrayList<Integer>(Arrays.asList(1,2,3));
+        assertEquals(result, smallFlight.getAllReservedSeatNumbers());
     }
  }
 

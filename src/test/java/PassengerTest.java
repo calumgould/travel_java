@@ -54,6 +54,7 @@ public class PassengerTest {
         smallFlight.addPassenger(passenger);
         smallFlight.addPassenger(passenger2);
         smallFlight.addPassenger(passenger3);
-        assertEquals()
+//        assertEquals();
     }
+
 }
