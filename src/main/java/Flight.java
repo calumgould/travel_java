@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.stream.Collectors;
-//import java.util.Date;
+import java.time.LocalTime;
 
 public class Flight {
 
@@ -14,9 +14,9 @@ public class Flight {
     private String flightNumber;
     private String destinationAirport;
     private String departureAirport;
-    private String departureTime;
+    private LocalTime departureTime;
 
-    public Flight(Plane plane, String flightNumber, String destinationAirport, String departureAirport, String departureTime){
+    public Flight(Plane plane, String flightNumber, String destinationAirport, String departureAirport, LocalTime departureTime){
         this.passengers = new ArrayList<Passenger>();
         this.plane = plane;
         this.flightNumber = flightNumber;
@@ -49,7 +49,7 @@ public class Flight {
         return this.departureAirport;
     }
 
-    public String getDepartureTime(){
+    public LocalTime getDepartureTime(){
         return this.departureTime;
     }
 

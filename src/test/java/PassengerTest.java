@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.time.LocalTime;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -21,8 +23,8 @@ public class PassengerTest {
         passenger3 = new Passenger("Noel", 2);
         plane = new Plane(PlaneType.AIRBUSA300);
         plane2 = new Plane(PlaneType.DOUGLASDC8);
-        flight = new Flight(plane, "ED2427", "GLA", "EDI", "21:10");
-        smallFlight = new Flight(plane2, "RO054", "EDI", "ABD", "13:35");
+        flight = new Flight(plane, "ED2427", "GLA", "EDI", LocalTime.parse("21:10"));
+        smallFlight = new Flight(plane2, "RO054", "EDI", "ABD", LocalTime.parse("13:35"));
     }
 
     @Test
